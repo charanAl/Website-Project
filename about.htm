@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background:linear-gradient(green, lightblue);
+            background-repeat: no-repeat;
+            background-position: center;
+        
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 130px;
+            flex-wrap: wrap;
+        }
+        .profile img{
+            width: 250px;
+            height:250px;
+            border-radius: 50%;
+            border: 7PX solid rgb(19, 28, 21);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5)
+            
+        }
+        .tech div{
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+        }
+
+        .tech{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .tech div{
+            background:rgba(255,255,255, 0.25);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 0px ;
+        }
+        .tech img{
+            height: 30px;
+            width: 30px;
+
+        }
+        .intro{
+            max-width: 700px;
+        }
+        .intro h1{
+            font-size: 40px;
+            /* text-shadow: 0px 2px 5px(); */
+        }
+    </style>
 </head>
 <body>
-    
+    <section class="container">
+    <div class="profile">
+        <img src="Cherry.jpeg" alt="img">
+    </div>
+    <div class="intro">
+        <h1> About Me</h1>
+        <p> Hi,i'm <b>CHARAN ALLE</b>, a machine learnig,<b>Software engineer</b></p>
+        <div class="tech">
+             <img src="ai.webp" alt="">
+             AI&Tools
+        </div>
+        
+        <div>
+            <img src="itpic.avif" alt="" width="30" height="30">
+            Software Engineer
+        </div>
+        <div>
+            <img src="" alt="">
+            Machine learning
+        </div>
+        <div>
+            <img src="" alt="">
+            FullStackDeveloper
+        </div>
+        <p>I like <b>problem solving  </b>aspire inspire  </p>
+    </div>
+    </section>
 </body>
 </html>
